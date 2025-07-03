@@ -8,7 +8,8 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="header-background"></div>
+        <div class="container header-content">
             <h1>Global Barons Construction</h1>
             <p>Your Vision. Our Foundation.</p>
         </div>
@@ -17,11 +18,31 @@
     <nav>
         <div class="container">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Services <span class="dropdown-arrow">&#9660;</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="buildings.html">Global Barons Buildings</a></li>
+                        <li><a href="housing.html">Global Barons Housing</a></li>
+                        <li><a href="affiliations.html">Global Barons Affiliations</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Projects <span class="dropdown-arrow">&#9660;</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="projects-buildings.html">Global Barons Buildings</a></li>
+                        <li><a href="projects-housing.html">Global Barons Housing</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">About Us <span class="dropdown-arrow">&#9660;</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="legacy.html">Our Legacy</a></li>
+                        <li><a href="leadership.html">Our Leadership</a></li>
+                        <li><a href="values.html">Our Values</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -30,7 +51,7 @@
         <div class="container">
             <h2>Building Excellence, Brick by Brick</h2>
             <p>We deliver high-quality construction solutions across South Africa.</p>
-            <a href="#" class="btn">View Our Projects</a>
+            <a href="projects.html" class="btn">View Our Projects</a>
         </div>
     </section>
 
