@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -11,20 +12,53 @@ body {
     margin: 0 auto;
 }
 
+/* Header with Logo Background */
 header {
-    background-color: #003366;
-    color: white;
-    padding: 40px 0;
+    background-color: #001a33; /* Dark navy blue */
+    color: orange;
+    padding: 80px 0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Global Barons.png');
+    background-size: 60% auto; /* Medium size logo */
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.15; /* Subtle watermark effect */
+    z-index: 0;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
 }
 
+header p {
+    font-size: 1.3em;
+    margin-top: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+}
+
+/* Navigation */
 nav {
-    background-color: #002244;
+    background-color: #002244; /* Slightly darker navy */
+    
 }
 
 nav ul {
@@ -33,6 +67,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 nav ul li {
@@ -44,6 +79,7 @@ nav ul li a {
     text-decoration: none;
     padding: 15px;
     display: block;
+    font-weight: 500;
 }
 
 nav ul li a:hover {
@@ -51,6 +87,41 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Dropdown styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #002244;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content li a {
+    padding: 12px 16px;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-content li a:hover {
+    background-color: #004080;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-arrow {
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+
+/* Hero Section */
 .hero {
     background: url('https://images.unsplash.com/photo-1581092334547-1e7d40f68bc3?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
     color: white;
@@ -61,6 +132,13 @@ nav ul li a:hover {
 .hero h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.hero p {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    max-width: 700px;
+    margin: 0 auto 25px;
 }
 
 .hero .btn {
@@ -70,12 +148,23 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
 }
 
+.hero .btn:hover {
+    background-color: #e6b800;
+}
+
+/* Footer */
 footer {
-    background-color: #003366;
+    background-color: #001a33; /* Matching header navy */
     color: white;
     text-align: center;
     padding: 30px 0;
     font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
 }
