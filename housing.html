@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Barons Housing</title>
+    <link rel="stylesheet" href="Global_Barons_Website_CSS.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0,26,51,0.8), rgba(0,26,51,0.9)), url('housing-bg.jpg');
+            padding: 100px 0;
+            color: orange;
+            text-align: center;
+        }
+        .housing-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .housing-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+        .housing-img {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+        }
+        .housing-content {
+            padding: 20px;
+        }
+        .housing-content h3 {
+            color: #001a33;
+            margin-top: 0;
+        }
+        .development-types {
+            background: #f5f5f5;
+            padding: 50px 0;
+            margin: 40px 0;
+        }
+        .section-title {
+            color: #001a33;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: #ffcc00;
+            margin: 15px auto 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Same header/nav as buildings.html -->
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Residential Housing Solutions</h2>
+            <p>Creating communities where families thrive</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Our Housing Developments</h2>
+        <div class="housing-showcase">
+            <div class="housing-card">
+                <div class="housing-img" style="background-image: url('suburban-home.jpg');"></div>
+                <div class="housing-content">
+                    <h3>Suburban Homes</h3>
+                    <p>Spacious family homes in secure communities with amenities for comfortable living.</p>
+                    <a href="#" class="card-btn">View Developments</a>
+                </div>
+            </div>
+            <!-- More housing cards -->
+        </div>
+    </section>
+
+    <section class="development-types">
+        <div class="container">
+            <h2 class="section-title">Development Options</h2>
+            <!-- Development options content -->
+        </div>
+    </section>
+
+    <!-- Same footer -->
+</body>
+</html>
