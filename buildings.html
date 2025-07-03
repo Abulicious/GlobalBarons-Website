@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Barons Buildings</title>
+    <link rel="stylesheet" href="Global_Barons_Website_CSS.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0,26,51,0.8), rgba(0,26,51,0.9)), url('construction-bg.jpg');
+            padding: 100px 0;
+            color: orange;
+            text-align: center;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border: 1px solid #ddd;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+        .service-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        .service-content {
+            padding: 20px;
+        }
+        .service-content h3 {
+            color: #001a33;
+            margin-top: 0;
+        }
+        .section-title {
+            color: #001a33;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: #ffcc00;
+            margin: 15px auto 0;
+        }
+        .card-btn {
+            background-color: #ffcc00;
+            color: #001a33;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+            transition: all 0.3s;
+        }
+        .card-btn:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-background"></div>
+        <div class="container header-content">
+            <h1>Global Barons Construction</h1>
+            <p>Your Vision. Our Foundation.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Services <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="buildings.html">Global Barons Buildings</a></li>
+                        <li><a href="housing.html">Global Barons Housing</a></li>
+                        <li><a href="affiliations.html">Global Barons Affiliations</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Projects <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="projects-buildings.html">Global Barons Buildings</a></li>
+                        <li><a href="projects-housing.html">Global Barons Housing</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">About Us <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="legacy.html">Our Legacy</a></li>
+                        <li><a href="leadership.html">Our Leadership</a></li>
+                        <li><a href="values.html">Our Values</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Commercial Building Solutions</h2>
+            <p>Innovative construction for corporate and institutional clients</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Our Building Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-img" style="background-image: url('office-building.jpg');"></div>
+                <div class="service-content">
+                    <h3>Office Complexes</h3>
+                    <p>Modern workspaces designed for productivity and employee wellbeing with sustainable materials.</p>
+                    <a href="#" class="card-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img" style="background-image: url('retail-space.jpg');"></div>
+                <div class="service-content">
+                    <h3>Retail Spaces</h3>
+                    <p>Customer-focused commercial designs that enhance shopping experiences.</p>
+                    <a href="#" class="card-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img" style="background-image: url('industrial-facility.jpg');"></div>
+                <div class="service-content">
+                    <h3>Industrial Facilities</h3>
+                    <p>Robust structures built to withstand heavy use while incorporating safety features.</p>
+                    <a href="#" class="card-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Global Barons Construction (Pty) Ltd. All rights reserved.</p>
+            <p>Registration No: 2025/439581/07 | Tax No: 9049173322</p>
+            <p>22 Azalea Rd, Durbanville, Cape Town, South Africa</p>
+        </div>
+    </footer>
+</body>
+</html>
